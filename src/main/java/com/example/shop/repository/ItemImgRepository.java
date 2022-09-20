@@ -8,5 +8,5 @@ import java.util.List;
 public interface ItemImgRepository extends JpaRepository<ItemImg, Long> {
     List<ItemImg> findByItemIdOrderByIdAsc(Long itemId);
 
-    ItemImg findByItemAndRepimgYN(Long itemId, String repimgYn);
+    ItemImg findByItemIdAndRepimgYN(Long itemId, String repimgYn);
 }
